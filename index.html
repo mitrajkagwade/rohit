@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hitman | Home</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0b192c; color: #ffffff; line-height: 1.6; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(11, 25, 44, 0.9); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 2px solid #fca311; }
+        .logo { font-size: 24px; font-weight: 800; color: #fca311; text-transform: uppercase; letter-spacing: 2px; }
+        .nav-links a { color: #ffffff; text-decoration: none; margin-left: 30px; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #fca311; }
+        .hero { height: 100vh; background: linear-gradient(rgba(11, 25, 44, 0.7), rgba(11, 25, 44, 0.9)), url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1920&q=80') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .hero h1 { font-size: 5rem; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 10px; }
+        .hero h2 { font-size: 2rem; color: #fca311; margin-bottom: 30px; font-weight: 300; }
+        .btn-primary { padding: 15px 40px; background-color: #fca311; color: #0b192c; text-decoration: none; font-size: 1.2rem; font-weight: bold; border-radius: 30px; transition: 0.3s; }
+        .btn-primary:hover { background-color: #e59400; transform: scale(1.05); }
+        footer { background-color: #060d17; text-align: center; padding: 20px; position: absolute; bottom: 0; width: 100%; border-top: 1px solid #142847;}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">RS45 Studios</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Him</a>
+            <a href="episodes.html">Episodes</a>
+            <a href="contact.html">Fan Club</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>The Hitman</h1>
+        <h2>Legacy of a Legend</h2>
+        <p style="max-width: 600px; margin-bottom: 30px; font-size: 1.2rem; color: #d1d5db;">Experience the untold journey of Rohit Sharma, from the streets of Borivali to leading the Men in Blue to World Cup glory.</p>
+        <a href="episodes.html" class="btn-primary">Explore Episodes</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 RS45 Studios. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
