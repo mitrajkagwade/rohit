@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hitman | Fan Club</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0b192c; color: #ffffff; line-height: 1.6; padding-top: 80px; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(11, 25, 44, 0.9); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 2px solid #fca311; }
+        .logo { font-size: 24px; font-weight: 800; color: #fca311; text-transform: uppercase; letter-spacing: 2px; }
+        .nav-links a { color: #ffffff; text-decoration: none; margin-left: 30px; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #fca311; }
+        .container { max-width: 600px; margin: 50px auto; padding: 40px; background-color: #142847; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h2 { text-align: center; color: #fca311; font-size: 2.2rem; margin-bottom: 10px; }
+        p.subtitle { text-align: center; color: #9ca3af; margin-bottom: 30px; }
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 15px; font-weight: 600; color: #d1d5db; }
+        input, textarea, select { padding: 12px; margin-top: 8px; border: none; border-radius: 5px; background-color: #0b192c; color: white; width: 100%; font-size: 1rem; border: 1px solid #334155;}
+        input:focus, textarea:focus, select:focus { outline: none; border-color: #fca311; }
+        button { margin-top: 25px; padding: 15px; background-color: #fca311; color: #0b192c; border: none; border-radius: 30px; cursor: pointer; font-size: 1.1rem; font-weight: bold; transition: 0.3s; }
+        button:hover { background-color: #e59400; transform: scale(1.02); }
+        footer { background-color: #060d17; text-align: center; padding: 20px; margin-top: 50px; border-top: 1px solid #142847;}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">RS45 Studios</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Him</a>
+            <a href="episodes.html">Episodes</a>
+            <a href="contact.html" class="active">Fan Club</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Join the Hitman Army</h2>
+        <p class="subtitle">Sign up for early access to documentary screenings and exclusive behind-the-scenes content.</p>
+        
+        <form action="#" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="moment">Favorite Rohit Sharma Moment</label>
+            <select id="moment" name="moment">
+                <option value="264">264 vs Sri Lanka</option>
+                <option value="200">First Double Century vs Australia</option>
+                <option value="ipl">Lifting the 5th IPL Trophy</option>
+                <option value="t20">T20 World Cup 2024</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Leave a Message for Ro</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+
+            <button type="submit">Join the Club</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 RS45 Studios. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
